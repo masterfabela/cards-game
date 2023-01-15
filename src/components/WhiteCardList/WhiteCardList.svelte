@@ -1,9 +1,14 @@
 <script lang="ts">
-    import './WhiteCard.scss';
+	import WhiteCard from '../WhiteCard/WhiteCard.svelte';
+    import './WhiteCardList.scss';
     export let whiteCards: string[] = [];
-    export let text: string = '';
 </script>
 
-<div class="white-card">
-    <span>{text}</span>
+<div class="card-list">
+    {#each whiteCards as card}
+        <div>
+            <WhiteCard text="{card}"></WhiteCard>
+        </div>
+        
+    {/each}
 </div>
