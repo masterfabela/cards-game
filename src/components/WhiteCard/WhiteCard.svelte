@@ -1,8 +1,10 @@
 <script lang="ts">
-    import './WhiteCard.scss';
+    import Card from '../Card/Card.svelte';
     export let text: string = '';
 </script>
 
-<div class="white-card">
-    <span>{text}</span>
-</div>
+<Card 
+    text="{text}" 
+    cardColor="white" 
+    textColor="black">
+</Card>
