@@ -5,7 +5,10 @@ import WhiteCardList from '../components/WhiteCardList/WhiteCardList.svelte';
 const meta = {
     title: 'Example/WhiteCardList',
     component: WhiteCardList,
-    tags: ['autodocs']
+    tags: ['autodocs'],
+    parameters: {
+        layout: 'fullscreen',
+    },
 } satisfies Meta<WhiteCardList>;
 
 export default meta;
